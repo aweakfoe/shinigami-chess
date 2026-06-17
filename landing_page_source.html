@@ -1,0 +1,312 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Grandmaster Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000000",
+                        "surface-tint": "#565e74",
+                        "deep-navy": "#1E293B",
+                        "primary-container": "#131b2e",
+                        "inverse-primary": "#bec6e0",
+                        "grandmaster-gold": "#D4AF37",
+                        "ink-black": "#0F172A",
+                        "surface-container": "#eceef0",
+                        "outline": "#76777d",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#271901",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-variant": "#e0e3e5",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-container": "#fed65b",
+                        "slate-border": "#E2E8F0",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#271901",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary-container": "#7c839b",
+                        "background": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container-high": "#e6e8ea",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffe088",
+                        "secondary": "#735c00",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-container": "#745c00",
+                        "surface": "#f7f9fb",
+                        "outline-variant": "#c6c6cd",
+                        "tertiary-fixed": "#fcdeb5",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1e",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#45464d",
+                        "paper-white": "#FFFFFF",
+                        "inverse-surface": "#2d3133",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-tertiary-container": "#98805d",
+                        "primary-fixed": "#dae2fd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "container-max": "1200px",
+                        "margin-edge": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "mono-ui": ["Courier Prime"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "mono-ui": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-paper-white dark:bg-ink-black border-b border-slate-border dark:border-outline docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center px-margin-edge h-20 w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-deep-navy dark:text-white">Shinigami Squares</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-deep-navy dark:text-grandmaster-gold border-b-2 border-deep-navy dark:border-grandmaster-gold pb-1 transition-colors duration-200 Active: opacity-80" href="#">Programs</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-deep-navy dark:hover:text-grandmaster-gold transition-colors duration-200" href="#">Coaches</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-deep-navy dark:hover:text-grandmaster-gold transition-colors duration-200" href="#">Pricing</a>
+</div>
+<button class="bg-deep-navy hover:bg-ink-black text-paper-white px-6 py-2 font-label-caps text-label-caps uppercase tracking-wider rounded transition-colors shadow-sm">
+                Book Evaluation
+            </button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-ink-black text-paper-white py-24 md:py-32 hero-pattern overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-edge relative z-10 flex flex-col items-start justify-center">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 mb-6 border border-grandmaster-gold/30 text-grandmaster-gold font-label-caps text-label-caps uppercase">Academy Protocol</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">
+                        Elite Chess Training for the Next Generation of Grandmasters
+                    </h1>
+<p class="font-body-lg text-body-lg text-surface-variant/90 mb-10 max-w-2xl">
+                        Professional, structured coaching designed for children who aspire to reach the highest levels of competitive play.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-grandmaster-gold hover:bg-secondary-container text-ink-black px-8 py-4 font-label-caps text-label-caps uppercase tracking-wider rounded transition-colors shadow-[0_2px_0_rgba(0,0,0,0.2)]">
+                            Book an Evaluation
+                        </button>
+<button class="border border-slate-border/30 hover:border-slate-border text-paper-white px-8 py-4 font-label-caps text-label-caps uppercase tracking-wider rounded transition-colors">
+                            View Curriculum
+                        </button>
+</div>
+</div>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-1/4 translate-y-1/4">
+<span class="material-symbols-outlined" style="font-size: 400px; font-variation-settings: 'wght' 200;">chess</span>
+</div>
+</section>
+<!-- Credentials Row -->
+<section class="bg-paper-white border-b border-slate-border py-12">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-border">
+<div class="flex flex-col items-center justify-center p-4">
+<span class="font-display-lg text-display-lg text-deep-navy mb-2">1621</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">FIDE Rating</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4">
+<span class="font-display-lg text-display-lg text-deep-navy mb-2">2055</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Chess.com</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4">
+<span class="font-display-lg text-display-lg text-deep-navy mb-2">&gt;50%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">FIDE Success Rate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Coach -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex justify-center lg:justify-start mb-10 lg:mb-0">
+<div class="relative">
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-paper-white shadow-[0_0_0_1px_rgba(226,232,240,1)]">
+<img alt="Coach Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoD0zuY-38-xNiFEvwxter8Vt3tZ8-6eM-94ttvjAHE0brbi5aGAbmtmYHQM7U770IQzR0WMd7OL04eOvH8K1sCwvSo1UVA0DiqUEQDHr4KsmeFVVFhmXfWtUyhVNqtzRN1VOOykgXOThE2t-VJ0L_rVxXYesLoC0N2DVmdByrWS-vET0YCAHw4ejoRMSfSyBj7VV_NLaMEVItXg2W8f0V0QiZokqNft8IKe9pAl1Ij8h9SVnP6PxytinbYafdKclYBxvtJ__4nlmR">
+</div>
+<div class="absolute -bottom-4 -right-4 bg-paper-white border border-slate-border p-4 rounded shadow-sm">
+<span class="material-symbols-outlined text-grandmaster-gold text-3xl">workspace_premium</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-6">Master Your Craft</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                            "Guided by masters of the craft, our curriculum is built on decades of competitive excellence and a deep understanding of youth development."
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            We believe that true mastery requires more than just memorizing lines; it demands a profound understanding of positional nuances, tactical awareness, and the psychological fortitude to withstand grueling tournament conditions.
+                        </p>
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-12 bg-grandmaster-gold"></div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-deep-navy">Head Coach &amp; Founder</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curriculum Grid -->
+<section class="py-24 bg-background border-t border-slate-border">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-4">Structured Curriculum</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A methodical approach to mastery, divided into three distinct phases of development.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Beginner -->
+<div class="bg-paper-white border border-slate-border p-8 rounded hover:border-deep-navy transition-colors duration-300 group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container rounded mb-6 text-deep-navy group-hover:bg-deep-navy group-hover:text-paper-white transition-colors">
+<span class="material-symbols-outlined">chess</span>
+</div>
+<div class="mb-4">
+<span class="inline-block px-2 py-1 bg-surface-container text-deep-navy font-label-caps text-label-caps uppercase rounded text-xs mb-3">Phase I</span>
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Beginner</h3>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant font-semibold">Foundations of Strategy</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Establishing the core principles of opening development, center control, and basic tactical motifs.</p>
+</div>
+<!-- Intermediate -->
+<div class="bg-paper-white border border-slate-border p-8 rounded hover:border-deep-navy transition-colors duration-300 group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container rounded mb-6 text-deep-navy group-hover:bg-deep-navy group-hover:text-paper-white transition-colors">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div class="mb-4">
+<span class="inline-block px-2 py-1 bg-surface-container text-deep-navy font-label-caps text-label-caps uppercase rounded text-xs mb-3">Phase II</span>
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Intermediate</h3>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant font-semibold">Tactical Mastery</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Deep diving into complex combinations, calculation techniques, and middle-game planning.</p>
+</div>
+<!-- Advanced -->
+<div class="bg-paper-white border border-slate-border p-8 rounded hover:border-deep-navy transition-colors duration-300 group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-grandmaster-gold"></div>
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container rounded mb-6 text-deep-navy group-hover:bg-deep-navy group-hover:text-paper-white transition-colors">
+<span class="material-symbols-outlined">emoji_events</span>
+</div>
+<div class="mb-4">
+<span class="inline-block px-2 py-1 bg-surface-container text-deep-navy font-label-caps text-label-caps uppercase rounded text-xs mb-3">Phase III</span>
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-2">Advanced</h3>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant font-semibold">Tournament Prep</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80">Opening repertoire preparation, endgame technique, and psychological conditioning for competitive play.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Parent Inquiry Form -->
+<section class="py-24 bg-surface-container-lowest border-t border-slate-border">
+<div class="max-w-container-max mx-auto px-margin-edge flex justify-center">
+<div class="w-full max-w-xl bg-paper-white border border-slate-border p-8 md:p-12 rounded">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mb-2">Parent Inquiry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Request an evaluation for your child's placement.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="block font-label-caps text-label-caps text-deep-navy uppercase mb-2" for="child_name">Child's Name</label>
+<input class="w-full bg-background border border-slate-border rounded px-4 py-3 focus:outline-none focus:border-deep-navy focus:ring-1 focus:ring-deep-navy transition-colors font-body-md" id="child_name" placeholder="Enter child's full name" type="text">
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-deep-navy uppercase mb-2" for="child_age">Age</label>
+<input class="w-full bg-background border border-slate-border rounded px-4 py-3 focus:outline-none focus:border-deep-navy focus:ring-1 focus:ring-deep-navy transition-colors font-body-md" id="child_age" placeholder="Years" type="number">
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-deep-navy uppercase mb-2" for="current_level">Current Level</label>
+<select class="w-full bg-background border border-slate-border rounded px-4 py-3 focus:outline-none focus:border-deep-navy focus:ring-1 focus:ring-deep-navy transition-colors font-body-md appearance-none" id="current_level">
+<option disabled="" selected="" value="">Select Level</option>
+<option value="beginner">Beginner (Unrated)</option>
+<option value="intermediate">Intermediate (&lt; 1200)</option>
+<option value="advanced">Advanced (1200+)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-deep-navy uppercase mb-2" for="parent_email">Parent Email</label>
+<input class="w-full bg-background border border-slate-border rounded px-4 py-3 focus:outline-none focus:border-deep-navy focus:ring-1 focus:ring-deep-navy transition-colors font-body-md" id="parent_email" placeholder="name@example.com" type="email">
+</div>
+<div class="pt-4">
+<button class="w-full bg-deep-navy hover:bg-ink-black text-paper-white px-8 py-4 font-label-caps text-label-caps uppercase tracking-wider rounded transition-colors shadow-sm flex items-center justify-center gap-2" type="submit">
+                                Submit Inquiry
+                                <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink-black dark:bg-black w-full bottom-0">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter px-margin-edge py-12 w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-grandmaster-gold mb-4">Shinigami Squares</div>
+<div class="font-mono-ui text-mono-ui text-surface-variant opacity-70">© 2024 Shinigami Squares. All rights reserved.</div>
+</div>
+<div class="flex flex-col md:flex-row gap-6 md:gap-8 font-mono-ui text-mono-ui">
+<a class="text-surface-variant opacity-70 hover:text-white dark:hover:text-grandmaster-gold underline transition-all duration-300" href="#">Contact</a>
+<a class="text-surface-variant opacity-70 hover:text-white dark:hover:text-grandmaster-gold underline transition-all duration-300" href="#">Privacy Policy</a>
+<a class="text-surface-variant opacity-70 hover:text-white dark:hover:text-grandmaster-gold underline transition-all duration-300" href="#">Terms of Service</a>
+<a class="text-surface-variant opacity-70 hover:text-white dark:hover:text-grandmaster-gold underline transition-all duration-300" href="#">Faculty Portal</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

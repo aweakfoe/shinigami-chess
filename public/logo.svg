@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Left Boxes -->
+  <rect x="10" y="15" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+  <rect x="10" y="40" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+  <rect x="10" y="65" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+  
+  <!-- Right Boxes -->
+  <rect x="70" y="15" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+  <rect x="70" y="40" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+  <rect x="70" y="65" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+
+  <!-- Center 'S' Base (Dark Background) -->
+  <rect x="37" y="40" width="26" height="45" fill="#1E293B" />
+  
+  <!-- Center 'S' Gold Polygons (Stencil S shape) -->
+  <polygon points="41,44 59,44 59,52 41,62" fill="#C9A05C" />
+  <polygon points="59,81 41,81 41,73 59,63" fill="#C9A05C" />
+
+  <!-- Center Hood Base -->
+  <path d="M 37 40 L 29 25 C 37 10, 43 5, 50 5 C 57 5, 63 10, 71 25 L 63 40 Z" fill="#1E293B" />
+  
+  <!-- Center Hood Gold Inside -->
+  <path d="M 41 36 L 33 25 C 40 12, 45 9, 50 9 C 55 9, 60 12, 67 25 L 59 36 Z" fill="#C9A05C" />
+  
+  <!-- Center Hood Dark Void -->
+  <path d="M 50 32 L 40 23 L 50 14 L 60 23 Z" fill="#1E293B" />
+</svg>

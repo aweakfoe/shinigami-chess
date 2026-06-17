@@ -1,0 +1,282 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Enrollment Contact - Shinigami Squares</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c6c6cd",
+                      "primary-container": "#131b2e",
+                      "inverse-primary": "#bec6e0",
+                      "secondary": "#735c00",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed-dim": "#e9c349",
+                      "inverse-surface": "#2d3133",
+                      "primary-fixed": "#dae2fd",
+                      "on-tertiary-container": "#98805d",
+                      "tertiary-container": "#271901",
+                      "on-secondary-fixed": "#241a00",
+                      "on-primary": "#ffffff",
+                      "on-background": "#191c1e",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-fixed": "#271901",
+                      "deep-navy": "#1E293B",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#d8dadc",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#565e74",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary-container": "#7c839b",
+                      "primary": "#000000",
+                      "on-tertiary-fixed-variant": "#574425",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "on-primary-fixed": "#131b2e",
+                      "inverse-on-surface": "#eff1f3",
+                      "tertiary": "#000000",
+                      "surface-container-high": "#e6e8ea",
+                      "primary-fixed-dim": "#bec6e0",
+                      "outline": "#76777d",
+                      "on-surface-variant": "#45464d",
+                      "background": "#f7f9fb",
+                      "on-secondary-fixed-variant": "#574500",
+                      "secondary-container": "#fed65b",
+                      "tertiary-fixed-dim": "#dec29a",
+                      "on-surface": "#191c1e",
+                      "on-error": "#ffffff",
+                      "ink-black": "#0F172A",
+                      "grandmaster-gold": "#D4AF37",
+                      "on-secondary-container": "#745c00",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#fcdeb5",
+                      "surface": "#f7f9fb",
+                      "slate-border": "#E2E8F0",
+                      "on-tertiary": "#ffffff",
+                      "paper-white": "#FFFFFF",
+                      "surface-container": "#eceef0",
+                      "secondary-fixed": "#ffe088",
+                      "surface-container-low": "#f2f4f6",
+                      "surface-variant": "#e0e3e5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "unit": "4px",
+                      "margin-edge": "32px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "mono-ui": [
+                              "Courier Prime"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "42px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "mono-ui": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        .input-transition {
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .input-transition:focus {
+            outline: none;
+            border-color: #1E293B;
+            box-shadow: 0 0 0 1px #1E293B;
+        }
+    </style>
+</head>
+<body class="bg-deep-navy min-h-screen flex flex-col antialiased selection:bg-grandmaster-gold selection:text-ink-black">
+<!-- TopNavBar: Suppressed. Intent is linear/transactional (Enrollment Contact). Canvas is prioritized. -->
+<main class="flex-grow flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+<!-- Subtle Background Texture/Pattern -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="w-full max-w-2xl relative z-10">
+<!-- Header Section -->
+<div class="text-center mb-10">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-paper-white mb-4">
+                    Begin the Journey
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-primary max-w-lg mx-auto">
+                    Provide your details below to schedule an initial consultation and assessment.
+                </p>
+</div>
+<!-- Form Card -->
+<div class="glass-card rounded-xl p-8 md:p-12 shadow-2xl border border-slate-border/20 relative overflow-hidden">
+<!-- Decorative Top Border -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-deep-navy via-grandmaster-gold to-deep-navy"></div>
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Parent's Full Name -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="parent-name">
+                                Parent's Full Name
+                            </label>
+<input autocomplete="name" class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline" id="parent-name" name="parent-name" placeholder="e.g. Jane Doe" required="" type="text">
+</div>
+<!-- Child's Age -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="child-age">
+                                Child's Age
+                            </label>
+<input class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline" id="child-age" max="18" min="4" name="child-age" placeholder="Age" required="" type="number">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Email Address -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="email">
+                                Email Address
+                            </label>
+<input autocomplete="email" class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline" id="email" name="email" placeholder="jane@example.com" required="" type="email">
+</div>
+<!-- Phone Number -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="phone">
+                                Phone Number
+                            </label>
+<input autocomplete="tel" class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline" id="phone" name="phone" placeholder="(555) 123-4567" required="" type="tel">
+</div>
+</div>
+<!-- Current Chess Rating -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="rating">
+                            Current Chess Rating (if any)
+                        </label>
+<input class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline" id="rating" name="rating" placeholder="e.g. USCF 1200 or Lichess 1500 (Optional)" type="text">
+</div>
+<!-- Primary Goal -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="goal">
+                            Primary Goal
+                        </label>
+<textarea class="input-transition w-full bg-surface-container-low border border-slate-border rounded-xl px-4 py-3 font-body-md text-body-md text-deep-navy placeholder:text-outline resize-none" id="goal" name="goal" placeholder="Briefly describe what you hope to achieve through coaching..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Area -->
+<div class="pt-4">
+<button class="w-full bg-deep-navy text-paper-white font-headline-md text-headline-md py-4 px-8 rounded-xl shadow-[0_2px_0_0_rgba(0,0,0,0.1)] hover:bg-ink-black transition-all active:translate-y-[1px] active:shadow-none flex items-center justify-center gap-2 group" type="submit">
+<span class="">Request Consultation</span>
+<span aria-hidden="true" class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-4 flex items-center justify-center gap-2 text-center">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-size: 16px;">lock</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Directly contacts Shinigami Squares</p>
+</div>
+</div>
+</form>
+</div>
+<!-- Return Link -->
+<div class="mt-8 text-center">
+<a class="inline-flex items-center gap-2 font-body-md text-body-md text-inverse-primary hover:text-paper-white transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">arrow_back</span>
+                    Return to Curriculum
+                </a>
+</div>
+</div>
+</main>
+<!-- Footer: Suppressed. Linear flow context. -->
+
+
+</body></html>
