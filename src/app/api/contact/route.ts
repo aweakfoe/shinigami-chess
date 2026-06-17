@@ -1,4 +1,4 @@
-﻿import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -25,9 +25,11 @@ export async function POST(req: Request) {
         const { Resend } = await import('resend');
         const resend = new Resend(process.env.RESEND_API_KEY);
         const result = await resend.emails.send({
-          from: 'onboarding@resend.dev',
-          to: 'arindamyapps@gmail.com',
-          subject: `♟️ New Demo Booking — ${childName} (Age ${childAge})`,
+          from: 'Shinigami Chess Academy <onboarding@resend.dev>',
+          to: ['arindamyapps@gmail.com'],
+          replyTo: email,
+          subject: `New Demo Booking: ${childName}, Age ${childAge} | ${phone}`,
+          text: `New demo booking\n\nChild: ${childName}\nAge: ${childAge}\nPhone: ${phone}\nEmail: ${email}\nRating: ${rating || 'Beginner'}\nGoal: ${goal || 'Not specified'}`,
           html: `
             <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#f8f9fa;padding:20px;border-radius:8px;">
               <div style="background:#0F172A;padding:24px;border-radius:8px;margin-bottom:20px;text-align:center;">
