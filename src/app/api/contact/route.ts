@@ -1,4 +1,4 @@
-﻿import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,24 +44,7 @@ export async function POST(req: Request) {
       }
     }
 
-    // SMS via Twilio (only if credentials are set)
-    let smsSent = false;
-    if (process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN && process.env.TWILIO_FROM_NUMBER) {
-      try {
-        const twilio = (await import('twilio')).default;
-        const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
-        await client.messages.create({
-          body: `Shinigami Chess: New demo for ${childName} (Age ${childAge}). Phone: ${phone}. Goal: ${goal ? goal.substring(0, 40) + '...' : 'Not specified'}`,
-          from: process.env.TWILIO_FROM_NUMBER,
-          to: '+919340718544',
-        });
-        smsSent = true;
-      } catch (smsError: any) {
-        console.warn('SMS failed (non-fatal):', smsError.message);
-      }
-    }
-
-    return NextResponse.json({ success: true, emailSent, smsSent });
+    return NextResponse.json({ success: true, emailSent });
   } catch (error: any) {
     console.error('API Route Error:', error);
     return NextResponse.json({ error: 'Internal Server Error', details: error.message }, { status: 500 });
