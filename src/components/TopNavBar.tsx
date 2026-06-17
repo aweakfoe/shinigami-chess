@@ -81,10 +81,12 @@ export default function TopNavBar() {
             if (window.location.pathname === '/') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
           }} style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Shinigami Chess Logo"
               style={{
-                height: "44px", width: "44px", display: "block"
+                height: "46px", width: "46px", display: "block",
+                mixBlendMode: "screen",
+                filter: "brightness(1.3) contrast(1.1)"
               }}
             />
             <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
