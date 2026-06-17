@@ -316,3 +316,89 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
+/* ── Mobile nav show/hide ──────────────────────────── */
+.nav-mobile { display: none; }
+.nav-desktop { display: flex; }
+
+/* ── Mobile Responsive ─────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --spacing-margin-edge: 18px;
+    --spacing-gutter: 16px;
+  }
+
+  /* Navbar */
+  .nav-desktop { display: none !important; }
+  .nav-mobile  { display: flex !important; }
+
+  /* Hero section */
+  .hero-content {
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  /* Float badge — hide on mobile */
+  .float-badge { display: none !important; }
+
+  /* Grids → single column */
+  [style*="gridTemplateColumns: repeat(auto-fit"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Pricing, feature grids */
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Form grid */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Reduce section vertical padding */
+  section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  /* Typography scale-down */
+  h1 { font-size: clamp(28px, 8vw, 40px) !important; }
+  h2 { font-size: clamp(22px, 6vw, 32px) !important; }
+  h3 { font-size: clamp(18px, 5vw, 24px) !important; }
+
+  /* Buttons — full width on mobile */
+  .submit-button { width: 100%; }
+
+  /* Glass card padding */
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+
+  /* LearnTogether — text only (image fades) */
+  [style*="background: linear-gradient(to right"] {
+    background: rgba(5,10,25,0.95) !important;
+  }
+
+  /* Horizontal flex rows → column */
+  [style*="display: \"flex\""][style*="flexWrap: \"wrap\""] {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-margin-edge: 14px;
+  }
+
+  /* CTA buttons stack */
+  [style*="display: flex"][style*="gap: \"1rem\""] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  /* Testimonials carousel padding */
+  [style*="padding: \"2.5rem\""] {
+    padding: 1.25rem !important;
+  }
+}
