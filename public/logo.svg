@@ -1,27 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
-  <!-- Left Boxes -->
-  <rect x="10" y="15" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
-  <rect x="10" y="40" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
-  <rect x="10" y="65" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
-  
-  <!-- Right Boxes -->
-  <rect x="70" y="15" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
-  <rect x="70" y="40" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
-  <rect x="70" y="65" width="20" height="20" fill="#475569" stroke="#1E293B" stroke-width="4" />
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Knight head shape (simplified chess knight silhouette) -->
+  <path
+    d="M32 82
+       L32 72
+       Q28 70 26 65
+       Q24 58 28 52
+       Q30 47 28 43
+       Q27 38 30 35
+       Q34 31 38 33
+       Q40 28 44 26
+       Q50 22 56 24
+       Q62 26 64 32
+       Q66 38 62 44
+       Q60 48 62 54
+       Q66 62 64 70
+       Q62 76 58 78
+       L68 82
+       Z"
+    fill="#EDBE52"
+  />
+  <!-- Eye -->
+  <circle cx="54" cy="36" r="3" fill="#0F172A"/>
+  <!-- Nostril -->
+  <circle cx="62" cy="46" r="1.5" fill="#0F172A"/>
 
-  <!-- Center 'S' Base (Dark Background) -->
-  <rect x="37" y="40" width="26" height="45" fill="#1E293B" />
-  
-  <!-- Center 'S' Gold Polygons (Stencil S shape) -->
-  <polygon points="41,44 59,44 59,52 41,62" fill="#C9A05C" />
-  <polygon points="59,81 41,81 41,73 59,63" fill="#C9A05C" />
-
-  <!-- Center Hood Base -->
-  <path d="M 37 40 L 29 25 C 37 10, 43 5, 50 5 C 57 5, 63 10, 71 25 L 63 40 Z" fill="#1E293B" />
-  
-  <!-- Center Hood Gold Inside -->
-  <path d="M 41 36 L 33 25 C 40 12, 45 9, 50 9 C 55 9, 60 12, 67 25 L 59 36 Z" fill="#C9A05C" />
-  
-  <!-- Center Hood Dark Void -->
-  <path d="M 50 32 L 40 23 L 50 14 L 60 23 Z" fill="#1E293B" />
+  <!-- Bansuri flute — diagonal tube with holes -->
+  <g transform="rotate(-35, 50, 50)">
+    <!-- Tube body -->
+    <rect x="15" y="47" width="70" height="6" rx="3" fill="#FFFFFF" opacity="0.92"/>
+    <!-- Blow hole -->
+    <ellipse cx="22" cy="50" rx="3" ry="2.5" fill="#0F172A"/>
+    <!-- Finger holes -->
+    <circle cx="38" cy="50" r="2" fill="#0F172A"/>
+    <circle cx="47" cy="50" r="2" fill="#0F172A"/>
+    <circle cx="56" cy="50" r="2" fill="#0F172A"/>
+    <circle cx="65" cy="50" r="2" fill="#0F172A"/>
+  </g>
 </svg>
