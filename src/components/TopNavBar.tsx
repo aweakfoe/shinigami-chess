@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -84,9 +84,9 @@ export default function TopNavBar() {
               src="/logo.png"
               alt="Shinigami Chess Logo"
               style={{
-                height: "42px", width: "auto", display: "block",
-                mixBlendMode: "screen",
-                filter: "brightness(1.1)"
+                height: "40px", width: "40px", display: "block",
+                borderRadius: "10px",
+                objectFit: "cover"
               }}
             />
             <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
