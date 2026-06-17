@@ -36,7 +36,7 @@ export default function MeetCoach() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
             style={{
               background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
               borderRadius: "var(--radius-xl)",
@@ -97,7 +97,7 @@ export default function MeetCoach() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const, delay: 0.1 }}
           >
             <span style={{
               display: "inline-block", padding: "0.25rem 0.9rem", marginBottom: "1.25rem",
