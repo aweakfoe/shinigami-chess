@@ -1,36 +1,39 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <!-- Black background circle -->
-  <circle cx="50" cy="50" r="48" fill="#0F172A"/>
+  <!-- Dark background -->
+  <rect width="100" height="100" fill="#111111"/>
 
-  <!-- Chess King Crown — white, minimal -->
-  <!-- Base bar -->
-  <rect x="28" y="64" width="44" height="8" rx="2" fill="white"/>
-  <!-- Crown body -->
-  <rect x="32" y="52" width="36" height="14" rx="1" fill="white"/>
-  <!-- Left spike -->
-  <polygon points="33,52 38,52 36,36" fill="white"/>
-  <!-- Center spike (tallest) -->
-  <polygon points="46,52 54,52 50,28" fill="white"/>
-  <!-- Right spike -->
-  <polygon points="62,52 67,52 65,36" fill="white"/>
-  <!-- Cross on top center spike -->
-  <rect x="47.5" y="20" width="5" height="14" rx="1" fill="white"/>
-  <rect x="43" y="24" width="14" height="4" rx="1" fill="white"/>
+  <!-- Crown outline - stroke style like the reference -->
+  <g fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Crown base rectangle -->
+    <rect x="22" y="60" width="56" height="10" rx="1"/>
+    <!-- Crown body -->
+    <rect x="26" y="46" width="48" height="15" rx="1"/>
+    <!-- Left spike -->
+    <polyline points="26,46 26,32 36,46"/>
+    <!-- Right spike -->
+    <polyline points="74,46 74,32 64,46"/>
+    <!-- Center spike taller -->
+    <polyline points="36,46 50,22 64,46"/>
+  </g>
 
-  <!-- Scythe slash — gold diagonal arc cutting through -->
+  <!-- Cross on top of center spike -->
+  <rect x="47" y="13" width="6" height="14" rx="1.5" fill="white"/>
+  <rect x="41" y="18" width="18" height="5" rx="1.5" fill="white"/>
+
+  <!-- Quill / feather slash — the signature diagonal element -->
+  <!-- Main quill shaft -->
   <path
-    d="M 20 78 Q 55 20 80 30"
-    stroke="#EDBE52"
-    stroke-width="4"
-    stroke-linecap="round"
-    fill="none"
+    d="M 15 85 C 30 70 55 45 85 20"
+    stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"
   />
-  <!-- Scythe blade tip -->
+  <!-- Quill tip (pointed end at top-right) -->
   <path
-    d="M 78 24 Q 88 28 80 30 Q 82 20 78 24"
-    fill="#EDBE52"
+    d="M 85 20 C 80 18 75 22 78 28 C 72 24 80 16 85 20 Z"
+    fill="white"
   />
-
-  <!-- Gold ring border -->
-  <circle cx="50" cy="50" r="47" fill="none" stroke="#EDBE52" stroke-width="1.5" opacity="0.4"/>
+  <!-- Quill vane (feather curve left side) -->
+  <path
+    d="M 15 85 C 25 72 40 58 60 42 C 50 50 35 65 28 80 Z"
+    fill="white" opacity="0.6"
+  />
 </svg>
