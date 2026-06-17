@@ -1,39 +1,36 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <!-- Knight head shape (simplified chess knight silhouette) -->
+  <!-- Black background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0F172A"/>
+
+  <!-- Chess King Crown — white, minimal -->
+  <!-- Base bar -->
+  <rect x="28" y="64" width="44" height="8" rx="2" fill="white"/>
+  <!-- Crown body -->
+  <rect x="32" y="52" width="36" height="14" rx="1" fill="white"/>
+  <!-- Left spike -->
+  <polygon points="33,52 38,52 36,36" fill="white"/>
+  <!-- Center spike (tallest) -->
+  <polygon points="46,52 54,52 50,28" fill="white"/>
+  <!-- Right spike -->
+  <polygon points="62,52 67,52 65,36" fill="white"/>
+  <!-- Cross on top center spike -->
+  <rect x="47.5" y="20" width="5" height="14" rx="1" fill="white"/>
+  <rect x="43" y="24" width="14" height="4" rx="1" fill="white"/>
+
+  <!-- Scythe slash — gold diagonal arc cutting through -->
   <path
-    d="M32 82
-       L32 72
-       Q28 70 26 65
-       Q24 58 28 52
-       Q30 47 28 43
-       Q27 38 30 35
-       Q34 31 38 33
-       Q40 28 44 26
-       Q50 22 56 24
-       Q62 26 64 32
-       Q66 38 62 44
-       Q60 48 62 54
-       Q66 62 64 70
-       Q62 76 58 78
-       L68 82
-       Z"
+    d="M 20 78 Q 55 20 80 30"
+    stroke="#EDBE52"
+    stroke-width="4"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- Scythe blade tip -->
+  <path
+    d="M 78 24 Q 88 28 80 30 Q 82 20 78 24"
     fill="#EDBE52"
   />
-  <!-- Eye -->
-  <circle cx="54" cy="36" r="3" fill="#0F172A"/>
-  <!-- Nostril -->
-  <circle cx="62" cy="46" r="1.5" fill="#0F172A"/>
 
-  <!-- Bansuri flute — diagonal tube with holes -->
-  <g transform="rotate(-35, 50, 50)">
-    <!-- Tube body -->
-    <rect x="15" y="47" width="70" height="6" rx="3" fill="#FFFFFF" opacity="0.92"/>
-    <!-- Blow hole -->
-    <ellipse cx="22" cy="50" rx="3" ry="2.5" fill="#0F172A"/>
-    <!-- Finger holes -->
-    <circle cx="38" cy="50" r="2" fill="#0F172A"/>
-    <circle cx="47" cy="50" r="2" fill="#0F172A"/>
-    <circle cx="56" cy="50" r="2" fill="#0F172A"/>
-    <circle cx="65" cy="50" r="2" fill="#0F172A"/>
-  </g>
+  <!-- Gold ring border -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#EDBE52" stroke-width="1.5" opacity="0.4"/>
 </svg>
