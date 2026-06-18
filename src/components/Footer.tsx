@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Brand column */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
-              <img src="/logo.png" alt="Shinigami Chess Logo" style={{ height: "42px", width: "42px", borderRadius: "9px", background: "rgb(10,15,28)", filter: "brightness(1.2) contrast(1.05)" }} />
+              <img src="/logo.png" alt="Shinigami Chess Logo" style={{ height: "56px", width: "56px", borderRadius: "9px", background: "rgb(10,15,28)", filter: "brightness(1.2) contrast(1.05)" }} />
               <span style={{
                 fontFamily: "var(--font-inter)", fontSize: "18px", fontWeight: 800,
                 color: "white", letterSpacing: "-0.01em"

@@ -84,7 +84,7 @@ export default function TopNavBar() {
               src="/logo.png"
               alt="Shinigami Chess Logo"
               style={{
-                height: "46px", width: "46px", display: "block",
+                height: "60px", width: "60px", display: "block",
                 borderRadius: "10px",
                 background: "rgb(11,17,31)",
                 filter: "brightness(1.2) contrast(1.05)"
