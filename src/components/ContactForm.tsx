@@ -202,7 +202,7 @@ export default function ContactForm() {
 
           <div className="secure-badge">
             <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>lock</span>
-            <span className="label-text" style={{ marginBottom: 0 }}>Directly contacts Shinigami Squares</span>
+            <span className="label-text" style={{ marginBottom: 0 }}>Directly contacts Tactical Knight Academy</span>
           </div>
         </div>
 

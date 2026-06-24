@@ -92,7 +92,7 @@ export default function TopNavBar() {
             />
             <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
               <span style={{ fontFamily: "var(--font-inter)", fontSize: "14px", fontWeight: 800, color: "white", letterSpacing: "0.02em" }}>
-                Shinigami Squares
+                Tactical Knight
               </span>
               <span style={{ fontFamily: "var(--font-inter)", fontSize: "9px", fontWeight: 600, color: "var(--grandmaster-gold)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                 Chess Academy

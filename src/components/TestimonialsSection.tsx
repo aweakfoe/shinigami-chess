@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
       name: "Alex M.",
       rating: 2150,
       role: "FIDE Master Candidate",
-      text: "Shinigami Squares completely changed how I look at the board. The 1-on-1 Grandmaster coaching helped me identify systemic weaknesses in my middlegame planning. I gained 150 ELO in 3 months."
+      text: "Tactical Knight Academy completely changed how I look at the board. The 1-on-1 Grandmaster coaching helped me identify systemic weaknesses in my middlegame planning. I gained 150 ELO in 3 months."
     },
     {
       name: "Sarah T.",

@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
 
             <h2 style={{ fontSize: "20px", color: "var(--deep-navy)", marginTop: "2rem", marginBottom: "1rem" }}>1. Information We Collect</h2>
             <p style={{ marginBottom: "1.5rem" }}>
-              At Shinigami Squares, we collect information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Website or otherwise when you contact us. This includes your name, email address, and phone number.
+              At Tactical Knight Academy, we collect information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Website or otherwise when you contact us. This includes your name, email address, and phone number.
             </p>
 
             <h2 style={{ fontSize: "20px", color: "var(--deep-navy)", marginTop: "2rem", marginBottom: "1rem" }}>2. How We Use Your Information</h2>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
             <p style={{ marginBottom: "1.5rem" }}>
               If you have questions or comments about this notice, you may email us at arindamyapps@gmail.com or by post to:
               <br /><br />
-              Shinigami Squares<br />
+              Tactical Knight Academy<br />
               India
             </p>
           </div>

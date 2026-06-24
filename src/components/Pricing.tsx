@@ -20,7 +20,7 @@ export default function Pricing() {
       period: "/month",
       features: [
         "2 Live Group Sessions / week",
-        "Weekly Online Tournaments",
+        "Interactive Tactical Workouts",
         "Detailed Monthly Reports",
         "Post-Game Analysis",
         "Access to Video Library"
@@ -35,7 +35,7 @@ export default function Pricing() {
       features: [
         "1-on-1 Private Coaching (1hr/wk)",
         "Custom Opening Repertoire",
-        "Weekly Online Tournaments",
+        "Interactive Tactical Workouts",
         "Comprehensive Analytics",
         "Priority Support"
       ],

@@ -39,7 +39,7 @@ export default function TermsOfService() {
 
             <h2 style={{ fontSize: "20px", color: "var(--deep-navy)", marginTop: "2rem", marginBottom: "1rem" }}>1. Agreement to Terms</h2>
             <p style={{ marginBottom: "1.5rem" }}>
-              These Terms of Service constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and Shinigami Squares ("we," "us" or "our"), concerning your access to and use of our website as well as any other media form, media channel, or mobile application related, linked, or otherwise connected thereto.
+              These Terms of Service constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and Tactical Knight Academy ("we," "us" or "our"), concerning your access to and use of our website as well as any other media form, media channel, or mobile application related, linked, or otherwise connected thereto.
             </p>
 
             <h2 style={{ fontSize: "20px", color: "var(--deep-navy)", marginTop: "2rem", marginBottom: "1rem" }}>2. Enrollment and Classes</h2>
